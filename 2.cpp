@@ -12,14 +12,11 @@ public:
         ListNode *head = nullptr;
         ListNode *tail = nullptr;
         int c = 0;
-        int r;
-        int a;
-        int b;
         while (l1 || l2)
         {
-            a = l1 ? l1->val : 0;
-            b = l2 ? l2->val : 0;
-            r = a + b + c;
+           int a = l1 ? l1->val : 0;
+           int b = l2 ? l2->val : 0;
+           int r = a + b + c;
             if(r >= 10)
             {
                 r = r - 10;
